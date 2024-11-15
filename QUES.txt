@@ -1,0 +1,93 @@
+Functions of an OS:
+
+The operating system (OS) manages hardware and software resources, provides a user interface, manages files, controls peripherals, and enables multitasking.
+Process and Threads:
+
+A process is an instance of a running program, while a thread is a smaller unit within a process. Threads allow for concurrent execution within a process, sharing resources like memory.
+Buffer:
+
+A buffer temporarily holds data while it’s being transferred between two places, often used in input/output operations to smooth data flow.
+Preemptive Multitasking:
+
+In preemptive multitasking, the OS can interrupt a task and switch to another to ensure fair CPU time distribution, allowing for better responsiveness.
+Pipe and Data Flow:
+
+A pipe is used for inter-process communication, enabling one process to send data to another. Data flows in a unidirectional manner.
+Paging:
+
+Paging is a memory management scheme that eliminates the need for contiguous memory allocation by dividing memory into fixed-size pages.
+Demand Paging:
+
+Demand paging only loads pages into memory when they are needed, which saves memory and speeds up processing.
+Different States of a Process:
+
+Common states include new, ready, running, waiting, and terminated. Processes transition through these states during execution.
+State of Threads:
+
+Threads typically go through states like new, ready, running, blocked, and terminated, similar to processes.
+Kernel and Shell:
+
+The kernel is the core part of an OS, managing resources and hardware communication. The shell is the interface that allows users to interact with the OS.
+Difference between Preemptive and Non-preemptive:
+
+Preemptive multitasking allows the OS to switch tasks forcibly, while non-preemptive tasks run until they complete or voluntarily yield control.
+Linker and Loader:
+
+The linker combines object files into a single executable, while the loader loads this executable into memory for execution.
+Current Address Space (AS):
+
+The address space defines the memory a process can access. The OS manages this space for each process to prevent interference.
+Banker’s Algorithm:
+
+This is a deadlock-avoidance algorithm, named because it’s analogous to banking, ensuring resources are allocated without causing deadlocks.
+Critical Section:
+
+A section of code that must be executed by only one process or thread at a time to avoid conflicts.
+Condition of Deadlock:
+
+A deadlock occurs when a set of processes are blocked, each waiting for resources held by the others. The conditions include mutual exclusion, hold and wait, no preemption, and circular wait.
+Difference between Mutex and Semaphore:
+
+A mutex is a locking mechanism that provides mutual exclusion, allowing only one thread to access a resource. A semaphore is a signaling mechanism that can allow multiple threads limited access.
+Producer-Consumer Problem:
+
+A synchronization problem where the producer generates data and the consumer uses it. Semaphores and buffers manage the synchronization.
+Reader-Writer Problem:
+
+A synchronization problem where multiple readers can access data simultaneously, but writers need exclusive access.
+Disk Scheduling:
+
+Algorithms like FCFS, SSTF, SCAN, and CSCAN decide the order of requests to optimize read/write time on a disk.
+CPU Scheduling:
+
+The OS schedules processes based on policies like SJF (Shortest Job First), SRTF (Shortest Remaining Time First), FCFS (First Come First Serve), and Round Robin.
+Deadlock:
+
+A situation where processes get stuck, waiting on each other indefinitely due to competing resources.
+Zombie and Orphan State:
+
+A zombie process is terminated but has an entry in the process table. An orphan process is still running, but its parent has terminated.
+When Threading Occurs:
+
+Threading occurs when tasks need to execute concurrently within a single process, improving efficiency.
+Starvation and Aging:
+
+Starvation is when a process waits indefinitely due to resource unavailability. Aging is a technique to gradually increase a process’s priority to prevent starvation.
+Monolithic Kernel:
+
+A type of OS kernel where the entire OS runs in a single address space, making it faster but potentially less secure.
+System Call:
+
+An interface through which a program requests a service from the OS, like file handling, process control, etc.
+chmod Command:
+
+In Unix/Linux, chmod changes file permissions, specifying who can read, write, or execute a file.
+Segmentation:
+
+A memory management technique dividing a program into variable-size segments. It allows for efficient memory use but requires complex management.
+gcc and gedit:
+
+gcc is a compiler for C/C++ programs. gedit is a text editor in Linux.
+fork() and ftok():
+
+fork() creates a new process by duplicating the calling process. ftok() generates a unique key for inter-process communication.
